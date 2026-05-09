@@ -125,7 +125,7 @@ export default function CheckoutPage() {
   };
 
   return (
-    <main className="min-h-screen bg-[#081510] text-white py-32 px-6">
+    <main className="min-h-screen bg-[#081510] text-white py-32 px-4 md:px-6">
 
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16">
 
@@ -136,7 +136,7 @@ export default function CheckoutPage() {
             Checkout
           </p>
 
-          <h1 className="text-5xl font-light mb-12">
+          <h1 className="text-3xl md:text-5xl font-light mb-12">
             Shipping Details
           </h1>
 

@@ -101,7 +101,7 @@ export default function Products() {
         </div>
 
         {/* Grid */}
-        <div className="grid md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
           {filteredProducts.map(
             (product) => (
@@ -142,7 +142,7 @@ export default function Products() {
 
                   <img
                     src={product.image}
-                    className="w-full h-[420px] object-cover hover:scale-105 transition duration-700 cursor-pointer"
+                    className="w-full h-[320px] md:h-[420px] object-cover hover:scale-105 transition duration-700 cursor-pointer"
                   />
 
                 </Link>
@@ -154,7 +154,7 @@ export default function Products() {
                     {product.concern}
                   </p>
 
-                  <h3 className="text-2xl text-[#f3deb0] mb-3">
+                  <h3 className="text-3xl md:text-5xl text-[#f3deb0] mb-3">
                     {product.name}
                   </h3>
 

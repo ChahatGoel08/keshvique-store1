@@ -5,26 +5,27 @@ import Link from 'next/link';
 export default function Footer() {
 
   return (
-    <footer className="bg-[#081510] border-t border-[#d4af3720] pt-24 pb-10 px-6">
+    <footer className="bg-[#081510] border-t border-[#d4af3720] pt-20 pb-10 px-4 md:px-6">
 
       <div className="max-w-7xl mx-auto">
 
-        {/* Top */}
-        <div className="grid md:grid-cols-4 gap-12 mb-20">
+        {/* Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14 mb-16">
 
           {/* Brand */}
           <div>
 
-            {/* Logo */}
             <img
               src="/images/logo.png"
               alt="Keshvique"
-              className="h-20 w-auto mb-6 object-contain"
+              className="h-14 w-auto object-contain mb-6"
             />
 
-            <p className="text-gray-400 leading-relaxed">
+            <p className="text-gray-400 leading-relaxed text-sm">
+
               Luxury Ayurvedic haircare rituals crafted for healthier,
               stronger and shinier hair.
+
             </p>
 
           </div>
@@ -32,26 +33,26 @@ export default function Footer() {
           {/* Shop */}
           <div>
 
-            <h3 className="text-xl text-[#d4af37] mb-6">
+            <h3 className="text-[#d4af37] text-xl mb-6">
               Shop
             </h3>
 
-            <div className="flex flex-col gap-4 text-gray-400">
+            <div className="flex flex-col gap-4 text-gray-400 text-sm">
 
-              <Link href="/#products">
+              <a href="/#products">
                 Products
-              </Link>
+              </a>
 
-              <Link href="/#bundles">
+              <a href="/#bundles">
                 Bundles
-              </Link>
+              </a>
 
               <Link href="/wishlist">
                 Wishlist
               </Link>
 
-              <Link href="/#testimonials">
-                Testimonials
+              <Link href="/checkout">
+                Cart
               </Link>
 
             </div>
@@ -61,23 +62,23 @@ export default function Footer() {
           {/* Policies */}
           <div>
 
-            <h3 className="text-xl text-[#d4af37] mb-6">
+            <h3 className="text-[#d4af37] text-xl mb-6">
               Policies
             </h3>
 
-            <div className="flex flex-col gap-4 text-gray-400">
+            <div className="flex flex-col gap-4 text-gray-400 text-sm">
 
-              <Link href="/">
+              <a href="#">
                 Shipping Policy
-              </Link>
+              </a>
 
-              <Link href="/">
+              <a href="#">
                 Refund Policy
-              </Link>
+              </a>
 
-              <Link href="/">
+              <a href="#">
                 Privacy Policy
-              </Link>
+              </a>
 
             </div>
 
@@ -86,11 +87,11 @@ export default function Footer() {
           {/* Contact */}
           <div>
 
-            <h3 className="text-xl text-[#d4af37] mb-6">
+            <h3 className="text-[#d4af37] text-xl mb-6">
               Contact
             </h3>
 
-            <div className="flex flex-col gap-4 text-gray-400 leading-relaxed">
+            <div className="flex flex-col gap-4 text-gray-400 text-sm leading-relaxed">
 
               <a href="mailto:chahatgoel2002@gmail.com">
                 chahatgoel2002@gmail.com
@@ -100,23 +101,15 @@ export default function Footer() {
                 +91 9599754202
               </a>
 
-              <a
-                href="https://instagram.com"
-                target="_blank"
-              >
-                Instagram
-              </a>
-
-              {/* Address */}
-              <p className="pt-2">
+              <p>
 
                 Keshvique Luxury Haircare
                 <br />
 
-                Alipur, New Delhi, India
+                New Delhi, India
                 <br />
 
-                110036
+                110001
 
               </p>
 
@@ -127,19 +120,15 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-[#d4af3720] pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="border-t border-[#d4af3720] pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-gray-500 text-sm">
 
-          <p className="text-gray-500 text-sm">
-
+          <p>
             © 2026 Keshvique.
             All rights reserved.
-
           </p>
 
-          <p className="text-gray-500 text-sm">
-
+          <p>
             Crafted with luxury & Ayurveda.
-
           </p>
 
         </div>
