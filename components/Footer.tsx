@@ -101,6 +101,10 @@ export default function Footer() {
                 +91 9599754202
               </a>
 
+              <a href="www.instagram.com">
+                Instagram
+              </a>
+
               <p>
 
                 Keshvique Luxury Haircare
