@@ -154,7 +154,7 @@ export default function Products() {
                     {product.concern}
                   </p>
 
-                  <h3 className="text-3xl md:text-5xl text-[#f3deb0] mb-3">
+                  <h3 className="text-3xl md:text-3xl text-[#f3deb0] mb-3">
                     {product.name}
                   </h3>
 
